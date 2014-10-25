@@ -1,0 +1,19 @@
+<html>
+    <head>
+    </head>
+    <body>
+        {{#userlist}}
+        <li>
+            <h2>{{username}}</h2>
+            <h4>{{email}}</h4>
+        </li>
+        {{/userlist}} 
+
+        <h2>Add User </h2>
+        <form method="post" action="/addUser">
+            UserName: <input type="text" name="username"/>
+            Email: <input type="text" name="useremail"/>
+            <input type="submit"/>
+        </form>
+    </body>
+</html>
